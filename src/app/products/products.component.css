@@ -1,0 +1,86 @@
+img {
+  width: 100px;
+}
+.list-item {
+  width: 50%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* General body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the list */
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Individual product item */
+.list-item {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.list-item:hover {
+  transform: scale(1.05);
+}
+
+/* Product name */
+.list-item h1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Product image */
+.list-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Product price */
+.list-item h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #27ae60; /* A shade of green */
+}
+
+/* Buttons (if uncommented in HTML) */
+.btn-edit,
+.btn-delete {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-edit:hover,
+.btn-delete:hover {
+  background-color: #2980b9;
+}
