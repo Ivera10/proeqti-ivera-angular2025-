@@ -1,19 +1,24 @@
 body {
     font-family: 'Roboto', serif;
     margin: 0;
-   
+    padding: 0;
 }
 
+
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     background-color: #221c1c;
     color: white;
-    border-radius: 40px;
-    
-
+    border-radius: 0; 
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -22,10 +27,6 @@ header a {
     color: white;
     margin: 0 20px;
     font-weight: bold;
-   
-   
-    
-
 }
 
 
@@ -37,8 +38,13 @@ header a {
     padding: 10px 15px;
     border-radius: 5px; 
     transition: background-color 0.3s, color 0.3s;
+    
 }
 
+
+.header1 .a1 {
+    margin-left: -325px;
+}
 
 
 .header1 a:hover {
@@ -61,7 +67,8 @@ p {
 }
 
 .ddivera1 p .spdd {
-    color: rgb(190, 37, 37);
+    /* color: rgb(190, 37, 37); */
+    color:  rgb(229, 16, 16); 
     font-size: 32px;
 }
 
@@ -69,10 +76,6 @@ p {
     color: rgb(196, 196, 175);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-
-
-
 
 
 
@@ -181,7 +184,14 @@ nav{
 
 
 
-
-
-
-
+.h1dd {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    margin-top: 70px;
+    
+    
+}

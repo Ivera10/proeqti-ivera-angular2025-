@@ -3,6 +3,9 @@
     justify-content: center;
     text-align: center;
     font-size: 40px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    
     
 }
 
@@ -14,6 +17,8 @@
     justify-content: center;
     cursor: pointer;
     margin: 64px;
+    opacity: 0;
+    animation: slideIn 1.5s ease-in-out forwards;
 }
 
 .sityvebidd button {
@@ -58,5 +63,25 @@
     .sityvebidd button {
         font-size: 14px;
         padding: 6px 10px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-80px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
