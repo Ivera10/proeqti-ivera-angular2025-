@@ -1,14 +1,26 @@
-
 <div class="list">
   <div *ngFor="let product of Products" class="list-item">
-    <h1> დასახელება: {{ product.name }} </h1>
+
     <img src="{{product.image}}" alt="">
-    <h2>{{ product.price }} ₾ </h2>
 
-    <!-- <button class="btn-edit" (click)="editProduct(product)">რედაქტირება</button>
-    <button class="btn-delete" (click)="deleteProduct(product.id)">წაშლა</button> -->
+    <div class="dizainitextlist">
+      <h1>{{ product.name }}</h1>
 
+      <div class="spiciness-container">
+        <span>Spiciness: {{ product.spiciness }}</span>
+      </div>
 
+      <div class="price-container">
+        <h2> $ {{ product.price }} </h2>
+        <button>Add to cart</button>
+      </div>
+
+    </div>
 
   </div>
 </div>
+
+<!-- <button class="btn-edit" (click)="editProduct(product)">რედაქტირება</button>
+<button class="btn-delete" (click)="deleteProduct(product.id)">წაშლა</button> -->
+
+
