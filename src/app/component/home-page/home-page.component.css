@@ -41,11 +41,27 @@
     transform: scale(0.9);
 }
 
+@media (max-width: 1150px) {
+    .sityvebidd {
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+    
+    .sityvebidd button {
+        font-size: 20px;
+        padding: 8px 12px;
+    }
+}
+
+
 @media (max-width: 1040px) {
     .sityvebidd {
         flex-direction: column;
         align-items: center;
         gap: 5px;
+
     }
     
     .sityvebidd button {

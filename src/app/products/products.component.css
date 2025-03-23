@@ -148,3 +148,68 @@ h1 {
   background-color: red;
   border-color: rgb(16, 15, 15);
 }
+
+
+
+/* ---------- responsivee -------  */
+
+@media screen and (max-width: 1500px) {
+  .list {
+  
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  }
+
+  
+}
+@media screen and (max-width: 1450px) {
+  .list {
+  
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 90px;
+  }
+
+  
+}
+
+@media screen and (max-width: 1400px) {
+  .list {
+  
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 50px;
+  }
+
+  
+}
+
+
+
+@media screen and (max-width: 1150px) {
+  .list {
+    grid-template-columns: 1fr;
+    
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .list {
+    grid-template-columns: 1fr;
+    margin-left: 200px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .list {
+    grid-template-columns: 1fr;
+    margin-left: 170px;
+  }
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .list {
+    grid-template-columns: 1fr;
+    margin-left: 75px;
+  }
+}
