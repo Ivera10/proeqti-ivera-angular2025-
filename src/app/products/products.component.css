@@ -184,9 +184,9 @@ h1 {
 
 
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1200px) {
   .list {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     
   }
 }
