@@ -22,20 +22,20 @@ export class ProductsComponent {
     });
   }
 
-  editProduct(Product: any) {
-    this.editingProductId = Product.id;
-    // this.ProductForm.setValue({ name: Product.name, email: Product.email });
-  }
+  // editProduct(Product: any) {
+  //   this.editingProductId = Product.id;
+  //   // this.ProductForm.setValue({ name: Product.name, email: Product.email });
+  // }
 
-  deleteProduct(id: number) {
-    this.productService.deleteProduct(id).subscribe(() => {
-      console.log('Product deleted');
-      this.Products = this.Products.filter((Product) => Product.id !== id);
-    });
-  }
+  // deleteProduct(id: number) {
+  //   this.productService.deleteProduct(id).subscribe(() => {
+  //     console.log('Product deleted');
+  //     this.Products = this.Products.filter((Product) => Product.id !== id);
+  //   });
+  // }
 
-  resetForm() {
-    // this.ProductForm.reset();
-    this.editingProductId = null;
-  }
+  // resetForm() {
+  //   // this.ProductForm.reset();
+  //   this.editingProductId = null;
+  // }
 }
